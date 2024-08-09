@@ -11,6 +11,32 @@ const config: Config = {
       colors: {
         primary: "#EA565B",
       },
+      screens: {
+        "tablet": "1000px"
+      },
+      animation: {
+        "floatLeft": "floatLeftAnim 3s linear infinite",
+        "floatRight": "floatRightAnim 3s linear infinite",
+        "floatTop": "floatTopAnim 3.8s linear infinite",
+      },
+      keyframes: {
+        floatLeftAnim: {
+          "0%, 100%": { transform: "translate(0, 0) rotate(-10deg)" },
+          "25%": { transform: "translate(6px, 3px) rotate(-10deg)" },
+          "50%": { transform: "translate(3px, 6px) rotate(-10deg)" },
+          "75%": { transform: "translate(-6px, 3px) rotate(-10deg)" },
+        },
+        floatRightAnim: {
+          "0%, 100%": { transform: "translate(0, 0) rotate(10deg)" },
+          "25%": { transform: "translate(-6px, 3px) rotate(10deg)" },
+          "50%": { transform: "translate(3px, 6px) rotate(10deg)" },
+          "75%": { transform: "translate(6px, 3px) rotate(10deg)" },
+        },
+        floatTopAnim: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
