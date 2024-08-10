@@ -12,7 +12,9 @@ const config: Config = {
         primary: "#EA565B",
       },
       screens: {
-        "tablet": "1000px"
+        "tablet": "1000px",
+        "mobile": "500px",
+        "miniMobile": "360px",
       },
       animation: {
         "floatLeft": "floatLeftAnim 3s linear infinite",

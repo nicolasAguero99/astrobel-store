@@ -1,5 +1,5 @@
 // Constants
-import { ASTRAL_CARDS } from "@/constants/constants";
+import { ASTRAL_CARDS, ID_CARD_CUSTOMED } from "@/constants/constants";
 
 export default function AstralCards () {
   return (
@@ -11,7 +11,14 @@ export default function AstralCards () {
             <a href={`/card/${id}`} key={id} className="flex flex-col gap-2 cursor-pointer transition-opacity ease-out duration-1000 custom-card">
               <img className='w-40 transition-opacity ease-out duration-1000' src={`/images/${image}`} alt={name} />
               <h3 className="text-xl font-semibold w-36 overflow-x-hidden whitespace-nowrap text-ellipsis">{name}</h3>
-              <span className="font-medium text-gray-400">{formattedPrice}</span>
+              <span className="flex items-center gap-1 font-medium text-gray-400">
+                {
+                  ID_CARD_CUSTOMED !== id
+                  ? null
+                  : <small className="text-xs">Desde: </small>
+                }
+                {formattedPrice}
+              </span>
               <span className="text-primary font-semibold underline">Ver lectura</span>
             </a>
           )

@@ -40,3 +40,6 @@ export const ASTRAL_CARDS = [
     image: "card-5.png",
   }
 ]
+export const WPP_NUMBER = '5491136154830'
+export const DEFAULT_MSG = '¡Hola Belu! ¿Cómo andás? Quería saber más sobre'
+export const ID_CARD_CUSTOMED = ASTRAL_CARDS[4].id

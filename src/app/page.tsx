@@ -6,7 +6,7 @@ import StoreSection from './components/store/store-section'
 export default function Home() {
   return (
     <div className='mx-auto max-w-[1200px]'>
-      <Nav />
+      <Nav isHome />
       <MainSection />
       <StoreSection />
     </div>
