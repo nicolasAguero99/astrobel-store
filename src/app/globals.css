@@ -74,12 +74,25 @@ html {
 }
 
 .custom-hero-text {
-  background: linear-gradient(45deg, #de3978, #EA565B);
+  font-weight: bold;
+  background: linear-gradient(10deg, #d91862, #ffa256);
   background-size: 400%;
-  -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
-  animation: glowing 20s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradient 4s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .custom-mobile-menu {
