@@ -27,23 +27,39 @@ html {
   }
 }
 
+.astral-card {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
 .custom-single-front-card {
-  transform: perspective(600px) rotateY(20deg);
-  transition: transform 1s ease-out;
+  transform: rotateY(0deg);
+  transition: transform 0.8s ease-in-out;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .custom-single-back-card {
-  transform: perspective(600px) rotateY(-180deg);
-  transition: transform 1s ease-out;
+  transform: rotateY(180deg);
+  transition: transform 0.8s ease-in-out;
   backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .astral-card:hover .custom-single-front-card {
-  transform: perspective(600px) rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 .astral-card:hover .custom-single-back-card {
-  transform: perspective(600px) rotateY(-360deg);
+  transform: rotateY(0deg);
 }
 
 .custom-hero-button:after {

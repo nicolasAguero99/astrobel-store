@@ -19,8 +19,8 @@ export default function Id({ params }: { params: { id: string } }) {
           <img className='w-[1100px] blur-sm' src="/images/flash-bg.png" alt="Destello ilustración" />
         </div>
         <div className='max-[300px]:hidden relative w-[150px] min-[620px]:w-[200px] tablet:w-[250px] lg:w-[350px] h-[250px] tablet:h-[350px] lg:h-[480px] xl:h-[450px] max-[520px]:mt-[350px] mt-[200px] min-[780px]:mt-0 astral-card'>
-          <img className='tablet:absolute top-0 left-0 drop-shadow-2xl max-tablet:animate-floatTop tablet:custom-single-front-card' src={`/images/${image}`} alt={name} />
-          <img className='max-tablet:hidden absolute top-0.5 -left-0.5 drop-shadow-2xl custom-single-back-card' src={`/images/card-dorsal.png`} alt='carta astral dorsal' />
+          <img className='max-tablet:animate-floatTop custom-single-front-card drop-shadow-2xl' src={`/images/${image}`} alt={name} />
+          <img className='max-tablet:hidden custom-single-back-card drop-shadow-2xl' src={`/images/card-dorsal.png`} alt='carta astral dorsal' />
         </div>
         <div className="w-full min-[780px]:w-1/2 xl:w-fit flex flex-col gap-6 max-tablet:pb-10">
           <h1 className="text-2xl min-[420px]:text-3xl table:text-4xl font-semibold w-fit">{name}</h1>
